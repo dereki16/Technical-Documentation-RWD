@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" >
+    <meta charset="UTF-8">
+    <title>Tech Demo</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="head">HTML & CSS Documentation</header>
+      <a class="nav-link" href="#Starting_Out">Starting Out</a>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Body">Body</a>
+      <a class="nav-link" href="#Setting_Up_Elements">Setting Up Elements</a>
+      <a class="nav-link" href="#CSS">CSS</a>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Starting_Out" class="main-section">
+        <header>Starting Out</header>
+        <p> HTML or HyperText Markup Language is the standard markup language for documents designed to be displayed in a web browser.</p>
+        <pre>
+        <code class="code">
+&lt!DOCTYPE html>
+&lthtml>
+  &lthead>
+    &lttitle>Page Title&lt/title>
+  &lt/head>
+
+  &ltbody>
+    &lth1>This is a Heading&lt/h1>
+    &ltp>This is a paragraph.&lt/p>
+  &lt/body>
+&lt/html> 
+        </code>
+        </pre>
+        <p>Diving into HTML...</p>
+        <ul>
+          <li>The &lt!DOCTYPE html> declaration defines that this document is an HTML5 document.</li>
+          <li>The &lthtml> element is the root element of an HTML page.</li>
+          <li>The &lthead> element contains meta information about the HTML page.</li>
+          <li>The &lttitle> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab).</li>
+          <li>The &ltbody> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+          <li>The &lth1> element defines a large heading.</li>
+          <li>The &ltp> element defines a paragraph.</li>
+        </ul>
+      </section>
+              <div class="divider"></div>
+
+      <section id="Introduction" class="main-section">
+
+        <header>Introduction</header>
+        <p> After having filled out the bare essentials, you'll want to properly label the elements and add a few things as well. </p>
+        <pre>
+        <code class="code">
+&lt!DOCTYPE html>
+&lthtml lang="en">
+  &lthead>
+    &ltmeta charset="UTF-8">
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+    &ltlink rel="stylesheet" href="styles.css" />
+    &lttitle>Page Title&lt/title>
+  &lt/head>
+
+  &ltbody>
+    &lth1>This is a Heading&lt/h1>
+    &ltp>This is a paragraph.&lt/p>
+  &lt/body>
+&lt/html> 
+        </code>
+        </pre>
+        <p> Make sure to set the html to english language. </p>
+        <p> Add a meta tag with a charset equal to UTF-8 because it's able to represent all of the printable ASCII characters, as well as the non-printable characters </p>
+        <p> Add another meta tag for the viewport so your page will stay consistent despite devide accessed on. </p>
+      </section>
+        <div class="divider"></div>
+
+      <section id="Body" class="main-section">
+        <header>Body</header>
+        <p> The body is where you'll make up the bulk of the page. This is where you'll want to add headings of the topics you'll be discussing, as well as paragraphs or media. </p>
+        <p> You can enable headings and paragraphs. </p>
+                <pre>
+        <code class="code">
+    &lth1>Title of Page - most important heading&lt/h1>
+    &lth2>Topic of Importance&lt/h2>
+    &lth3>Subtopic&lt/h3>
+    // this goes on until heading 6 - the least important heading
+
+    &ltp>This is where you'd write your paragraph. Talk about the things that interest you, or describe the heading you listed above.&lt/p>
+        </code>
+        </pre>
+
+        <p>In order to add a picture to your page, add an img tag and give it a source - such as a url.</p>
+        <pre>
+          <code class="code">
+    &ltimg src="https://images.theconversation.com/files/377569/original/file-20210107-17-q20ja9.jpg?ixlib=rb-1.1.0&rect=278%2C340%2C4644%2C3098&q=45&auto=format&w=926&fit=clip">
+    &ltimg src="https://www.dogville-daycare.com/assets/images/cat_kity1.png">
+          </code>
+        </pre>
+
+        <p> Then you'll end up with a couple of images to display on your page! </p>
+      </section>
+        <div class="divider"></div>
+
+      <section id="Setting_Up_Elements" class="main-section">
+        <header>Setting Up Elements</header>
+        <p> This is where we will set up elements with appropriate id and class names. We will use ids for individual elements we want to modify. Class names for elements that will repeat. </p>
+        <p> Let's say for example, we want to change attributes for the second header, key words and images. </p>
+        <pre>
+        <code class="code">
+    &lth1>Animals Domesticated&lt/h1>
+    &lth2>Dogs&lt/h2>
+    &lth3>How dogs provide for their humans&lt/h3>
+
+    &ltp>Dogs are man's best friend. They are &ltstrong>loyal, kind, and affectionate.&lt/strong>&lt/p>
+    &ltimg id="dog-image" src="https://images.theconversation.com/files/377569/original/file-20210107-17-q20ja9.jpg?ixlib=rb-1.1.0&rect=278%2C340%2C4644%2C3098&q=45&auto=format&w=926&fit=clip">
+    &ltdiv class="divider">&lt/div>
+
+    &lth2 id="cat-title">Cats&lt/h2>
+    &lth3>How cats live as kings&lt/h3>
+
+    &ltp>Cats are also pretty cute. As seen in the book, &ltspan class="emphasized">Awesome Photos of Cats.&lt/span>&lt/p>
+    &ltimg id="cat-image" src="https://www.dogville-daycare.com/assets/images/cat_kity1.png">
+    &ltdiv class="divider">&lt/div>
+
+        </code>
+        </pre>
+      </section>
+              <div class="divider"></div>
+
+      <section id="CSS" class="main-section">
+        <header>CSS</header>
+        <p>Sometimes you might want to give the same properties to multiple elements, but have different properties for other attributes.</p>
+        <pre>
+          <code class="code">
+// gives padding to the top and bottom of the page
+body {
+  padding: 10 0;
+}
+// changes color of all h2 elements
+h2 {  
+  color: #0000DD;
+}
+// changes color of the element with id="cat-title"
+#cat-title {
+  color: red;
+}
+// italicizes and underlines 
+.emphasized {
+  font-style: italic;
+  text-decoration: underline;
+}
+</code>
+</pre>
+<p>This is where you might want to give the elements you want to keep similar the same class, or simply list out all elements with the same type.</p>
+<p>When you want to specify differences, give each element a different id.
+<pre>
+  <code class="code">
+// centers image and provides a 
+img { 
+  border
+  margin: auto;
+  display: block;
+  border: 10px solid black;
+  max-width: 50%;
+} 
+// specifies border radius and gives space between image and border
+#dog-image {
+  border-radius: 4px;
+  padding: 5px;
+}
+// gives larger border-radius
+#cat-image {
+  border-radius: 40px;
+}
+// provides a dividing line in betewen content
+.divider {
+  margin-top: 40px;
+  border: 2px solid black;
+  border-radius: 40%;
+}
+</code>
+</pre>
+    <p>Now, this is how your page should look.</p>
+        <div id="container">
+          <div id="code-output">
+          <h1>Animals Domesticated</h1>
+    <h2>Dogs</h2>
+    <h3>How dogs provide for their humans</h3>
+
+    <p>Dogs are man's best friend. They are <strong>loyal, kind, and affectionate.</strong></p>
+    <img id="dog-image" src="https://images.theconversation.com/files/377569/original/file-20210107-17-q20ja9.jpg?ixlib=rb-1.1.0&rect=278%2C340%2C4644%2C3098&q=45&auto=format&w=926&fit=clip">
+    <div class="divider-2"></div>
+
+    <h2 id="cat-title">Cats</h2>
+    <h3>How cats live as kings</h3>
+
+    <p>Cats are also pretty cute. As seen in the book, <span class="emphasized">Awesome Photos of Cats.</span></p>
+    <img id="cat-image" src="https://www.dogville-daycare.com/assets/images/cat_kity1.png">
+    <div class="divider-2"></div>
+    </div>
+    </div>
+      </section>
+    </main>
+  </body>
+</html>

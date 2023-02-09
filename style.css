@@ -1,0 +1,114 @@
+html {
+  font-family: verdana, sans-serif;
+}
+#navbar {
+  background-color: blue;
+}
+#navbar {
+  height: 100%;
+  width: 190px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+#head {
+  padding-left: 25px;
+}
+nav a {
+  padding: 75px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+nav a:hover {
+  color:#DDDDDD;
+}
+.main-section {
+  margin-left: 190px;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+body {
+  padding: 10 0;
+}
+#main-doc header {
+  font-size: 2em;
+  font-weight: bold;
+}
+#head {
+  font-size: 1.2em;
+  text-align: center;
+  padding-right: 25px;
+}
+#main-doc {
+  background-color: white;
+}
+.code {
+  background-color: gray;
+  display: block;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin: -30px 0;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+img {
+  margin: auto;
+  display: block;
+  border: 10px solid black;
+  max-width: 50%;
+}
+#dog-image {
+  border-radius: 4px;
+  padding: 5px;
+}
+#cat-image {
+  border-radius: 40px;
+}
+.divider {
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 40%;
+  margin-bottom: 20px;
+  margin-left: 200px;
+}
+.divider-2 {
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 40%;
+  margin-bottom: 20px;}
+
+#container {
+  background-color: gray;
+  padding: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#code-output {
+  background-color: white;
+  padding: 10px;
+}
+h2 {
+  color: #0000DD;
+}
+#cat-title {
+  color: red;
+}
+.emphasized {
+  font-style: italic;
+  text-decoration: underline;
+}
+ @media screen and (max-height: 450px) {
+   #navbar  a {
+     font-size: 18px; 
+     padding-top: 15px;
+   }
+}
